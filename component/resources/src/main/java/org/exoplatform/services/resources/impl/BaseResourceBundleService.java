@@ -603,7 +603,7 @@ abstract public class BaseResourceBundleService implements ResourceBundleService
                   outputBundled.merge(temp);
                   continue;
                }
-               log_.warn("Cannot load and merge the bundle: " + name[i]);
+               log_.debug("Cannot load and merge the bundle: " + name[i]);
             }
             outputBundled.resolveDependencies();
          }
